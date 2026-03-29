@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProductCardProps {
   rank?: number;
@@ -21,6 +22,7 @@ export function ProductCard({
   excerpt,
   rating,
   price,
+  image,
   badge,
   affiliateUrl,
 }: ProductCardProps) {
@@ -50,9 +52,19 @@ export function ProductCard({
         )}
       </div>
 
-      {/* Product image placeholder */}
+      {/* Product image */}
       <div className="mb-4 aspect-[4/3] w-full rounded-xl bg-[var(--bg-secondary)] border border-[var(--border)] flex items-center justify-center overflow-hidden">
-        <div className="text-[var(--text-muted)] text-sm">Product Image</div>
+        {image ? (
+          <Image
+            src={image}
+            alt={title}
+            width={400}
+            height={300}
+            className="h-full w-full object-contain p-4"
+          />
+        ) : (
+          <div className="text-[var(--text-muted)] text-sm">Product Image</div>
+        )}
       </div>
 
       {/* Title */}

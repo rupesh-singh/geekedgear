@@ -5,76 +5,45 @@ import { CategoryBadge } from "@/components/CategoryBadge";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { ComparisonTable } from "@/components/ComparisonTable";
 
-// Sample data — replace with real content from MDX files
 const FEATURED_PRODUCTS = [
   {
     rank: 1,
-    title: "Bowflex SelectTech 552 Adjustable Dumbbells",
-    slug: "bowflex-selecttech-552-review",
-    category: "Home Gym",
+    title: "Green Soul Monster Ultimate Gaming Chair",
+    slug: "green-soul-monster-ultimate-review",
+    category: "Gaming",
     excerpt:
-      "The gold standard for adjustable dumbbells. 15 weight settings from 5 to 52.5 lbs in one compact set.",
-    rating: 4.7,
-    price: "$349",
-    badge: "Editor's Choice",
-    affiliateUrl: "#",
+      "Multi-functional ergonomic gaming & office chair with premium spandex & PU leather, 4D armrests, and 180° recline. 8,700+ reviews.",
+    rating: 4.5,
+    price: "₹19,690",
+    badge: "Best Seller",
+    image: "https://m.media-amazon.com/images/I/61HyPFzZG7L._SX425_.jpg",
+    affiliateUrl: "https://amzn.to/4bY63iB",
   },
   {
     rank: 2,
-    title: "Optimum Nutrition Gold Standard Whey",
-    slug: "on-gold-standard-whey-review",
-    category: "Supplements",
+    title: "BenQ EW2790U 27\" 4K Monitor",
+    slug: "benq-ew2790u-4k-review",
+    category: "Tech",
     excerpt:
-      "24g protein, 5.5g BCAAs, and it actually tastes good. The benchmark every other protein gets compared to.",
-    rating: 4.8,
-    price: "$32",
-    badge: "Best Seller",
-    affiliateUrl: "#",
+      "27\" 4K UHD IPS with 95% P3, AI Contrast, 5Wx2 treVolo speakers, USB-C 65W PD. Perfect for devs and content creators.",
+    rating: 4.5,
+    price: "₹29,498",
+    badge: "Editor's Choice",
+    image: "https://m.media-amazon.com/images/I/71xmtUEoDcL._SY450_.jpg",
+    affiliateUrl: "https://amzn.to/4tfV3Eq",
   },
   {
     rank: 3,
-    title: "Secretlab Titan Evo 2026",
-    slug: "secretlab-titan-evo-2026-review",
-    category: "Gaming",
-    excerpt:
-      "Premium ergonomic chair that works for 12-hour coding sessions AND gaming marathons. Your back will thank you.",
-    rating: 4.6,
-    price: "$519",
-    affiliateUrl: "#",
-  },
-  {
-    rank: 4,
-    title: "REP Fitness PR-4000 Power Rack",
-    slug: "rep-fitness-pr-4000-review",
-    category: "Home Gym",
-    excerpt:
-      "Commercial-grade rack at home gym prices. 1,000 lb capacity, Westside hole spacing, and insane customization options.",
-    rating: 4.9,
-    price: "$699",
-    badge: "Top Rated",
-    affiliateUrl: "#",
-  },
-  {
-    rank: 5,
-    title: "Creatine Monohydrate (Thorne)",
-    slug: "thorne-creatine-review",
-    category: "Supplements",
-    excerpt:
-      "NSF Certified, zero fillers, actually third-party tested. The only creatine supplement you need.",
-    rating: 4.8,
-    price: "$32",
-    affiliateUrl: "#",
-  },
-  {
-    rank: 6,
-    title: "FlexiSpot E7 Standing Desk",
-    slug: "flexispot-e7-standing-desk-review",
+    title: "FLEXISPOT EN1 Standing Desk",
+    slug: "flexispot-en1-standing-desk-review",
     category: "Tech",
     excerpt:
-      "Dual motor, programmable heights, holds 355 lbs. Perfect for a monitor-heavy dev/gaming setup.",
+      "Electric height adjustable sit-stand desk with anti-collision detection, 80 KG capacity, 5-year warranty. 64% off!",
     rating: 4.5,
-    price: "$479",
-    affiliateUrl: "#",
+    price: "₹17,999",
+    badge: "Top Deal",
+    image: "https://m.media-amazon.com/images/I/51OIEZueOiL._SX425_.jpg",
+    affiliateUrl: "https://amzn.to/4lZeRJM",
   },
 ];
 
@@ -125,17 +94,17 @@ const CATEGORIES = [
 ];
 
 const COMPARISON_DATA = {
-  products: ["Bowflex 552", "PowerBlock Elite", "NordicTrack Select"],
-  prices: ["$349", "$339", "$429"],
+  products: ["Green Soul Monster", "BenQ EW2790U", "FLEXISPOT EN1"],
+  prices: ["₹19,690", "₹29,498", "₹17,999"],
   rows: [
-    { feature: "Weight Range", values: ["5–52.5 lbs", "5–50 lbs", "10–55 lbs"], highlight: 0 },
-    { feature: "Adjustment", values: ["Dial", "Pin", "Dial"], highlight: 1 },
-    { feature: "Build Quality", values: ["Plastic/Metal", "All Steel", "Plastic/Metal"], highlight: 1 },
-    { feature: "Footprint", values: ['15.75"', '12"', '14.5"'], highlight: 1 },
-    { feature: "Warranty", values: ["2 years", "10 years", "2 years"], highlight: 1 },
-    { feature: "Overall Rating", values: ["4.7 ★", "4.6 ★", "4.3 ★"], highlight: 0 },
+    { feature: "Category", values: ["Gaming Chair", "4K Monitor", "Standing Desk"], highlight: -1 },
+    { feature: "Rating", values: ["4.5 ★ (8.7K)", "4.5 ★ (112)", "4.5 ★ (42)"], highlight: 0 },
+    { feature: "Key Feature", values: ["4D Armrests", "AI Contrast", "Anti-Collision"], highlight: -1 },
+    { feature: "Warranty", values: ["3 Years", "3 Years", "5 Years"], highlight: 2 },
+    { feature: "Discount", values: ["45% OFF", "23% OFF", "64% OFF"], highlight: 2 },
+    { feature: "Best For", values: ["Gaming/Office", "Dev/Creative", "Ergonomic WFH"], highlight: -1 },
   ],
-  affiliateUrls: ["#", "#", "#"],
+  affiliateUrls: ["https://amzn.to/4bY63iB", "https://amzn.to/4tfV3Eq", "https://amzn.to/4lZeRJM"],
 };
 
 export default function Home() {
@@ -297,11 +266,11 @@ export default function Home() {
             className="text-2xl font-bold tracking-tight"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            Adjustable Dumbbells Compared
+            Our Top Picks Compared
           </h2>
           <p className="mt-2 text-sm text-[var(--text-muted)] max-w-lg">
-            The three most popular adjustable dumbbells on the market,
-            compared on what actually matters.
+            Three geeked-out essentials for your setup — gaming chair,
+            4K monitor, and standing desk, compared side by side.
           </p>
         </div>
         <ComparisonTable {...COMPARISON_DATA} />
