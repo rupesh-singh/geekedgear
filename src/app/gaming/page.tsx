@@ -11,6 +11,30 @@ export const metadata: Metadata = {
 const GAMING_PRODUCTS = [
   {
     rank: 1,
+    title: "ASUS TUF Gaming VG247Q1A 24\" 165Hz Monitor",
+    slug: "asus-tuf-vg247q1a-gaming-monitor-review",
+    category: "Monitors",
+    excerpt: "24\" FHD 165Hz VA panel with ELMB 1ms, FreeSync Premium, Shadow Boost, built-in speakers. Amazon's Choice — 41% OFF.",
+    rating: 4.6,
+    price: "₹13,499",
+    badge: "Amazon's Choice",
+    image: "https://m.media-amazon.com/images/I/61irNQIlNhL._SY450_.jpg",
+    affiliateUrl: "https://amzn.to/4dZHg07",
+  },
+  {
+    rank: 2,
+    title: "Kreo Hive 75 HE Hall Effect Keyboard",
+    slug: "kreo-hive-75-he-keyboard-review",
+    category: "Keyboards",
+    excerpt: "Hall Effect switches, 8K polling rate, rapid trigger, RGB, volume knob. Best budget competitive keyboard — 43% OFF.",
+    rating: 4.5,
+    price: "₹3,999",
+    badge: "Amazon's Choice",
+    image: "https://m.media-amazon.com/images/I/61dPj3YrYRL._SY450_.jpg",
+    affiliateUrl: "https://amzn.to/4dtSjPc",
+  },
+  {
+    rank: 3,
     title: "Green Soul Monster Ultimate Gaming Chair",
     slug: "green-soul-monster-ultimate-review",
     category: "Chairs",
@@ -22,28 +46,16 @@ const GAMING_PRODUCTS = [
     affiliateUrl: "https://amzn.to/4bY63iB",
   },
   {
-    rank: 2,
-    title: "BenQ EW2790U 27\" 4K Monitor",
-    slug: "benq-ew2790u-4k-review",
-    category: "Monitors",
-    excerpt: "4K UHD IPS, 95% P3, AI Contrast, treVolo 5Wx2 speakers, USB-C 65W PD, 3x HDMI. Great for gaming & content.",
-    rating: 4.5,
-    price: "₹29,498",
-    badge: "Editor's Choice",
-    image: "https://m.media-amazon.com/images/I/71xmtUEoDcL._SY450_.jpg",
-    affiliateUrl: "https://amzn.to/4tfV3Eq",
-  },
-  {
-    rank: 3,
-    title: "FLEXISPOT EN1 Standing Desk",
-    slug: "flexispot-en1-standing-desk-review",
-    category: "Desks",
-    excerpt: "Electric height adjustable, anti-collision detection, 80 KG capacity, 4 memory presets. 5-year warranty.",
-    rating: 4.5,
-    price: "₹17,999",
-    badge: "Top Deal",
-    image: "https://m.media-amazon.com/images/I/51OIEZueOiL._SX425_.jpg",
-    affiliateUrl: "https://amzn.to/4lZeRJM",
+    rank: 4,
+    title: "Casa Copenhagen Leather Gaming Chair",
+    slug: "casa-copenhagen-leather-gaming-chair-review",
+    category: "Chairs",
+    excerpt: "Italian leather, electric back massager, memory foam seating, multi-function armrest. 80% OFF at ₹7,999.",
+    rating: 4.3,
+    price: "₹7,999",
+    badge: "Hot Deal",
+    image: "https://m.media-amazon.com/images/I/81UiZ5GiF-L._SX425_.jpg",
+    affiliateUrl: "https://amzn.to/4tnazy5",
   },
 ];
 
@@ -69,7 +81,7 @@ export default function GamingPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="stagger grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="stagger grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {GAMING_PRODUCTS.map((product) => (
             <ProductCard key={product.slug} {...product} />
           ))}

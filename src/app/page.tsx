@@ -8,63 +8,63 @@ import { ComparisonTable } from "@/components/ComparisonTable";
 const FEATURED_PRODUCTS = [
   {
     rank: 1,
-    title: "Green Soul Monster Ultimate Gaming Chair",
-    slug: "green-soul-monster-ultimate-review",
+    title: "ASUS TUF Gaming VG247Q1A 24\" 165Hz Monitor",
+    slug: "asus-tuf-vg247q1a-gaming-monitor-review",
     category: "Gaming",
     excerpt:
-      "Multi-functional ergonomic gaming & office chair with premium spandex & PU leather, 4D armrests, and 180° recline. 8,700+ reviews.",
-    rating: 4.5,
-    price: "₹19,690",
-    badge: "Best Seller",
-    image: "https://m.media-amazon.com/images/I/61HyPFzZG7L._SX425_.jpg",
-    affiliateUrl: "https://amzn.to/4bY63iB",
+      "24\" FHD 165Hz, ELMB 1ms, FreeSync Premium, Shadow Boost, built-in speakers. Amazon's Choice — 41% OFF from ₹22,999.",
+    rating: 4.6,
+    price: "₹13,499",
+    badge: "Amazon's Choice",
+    image: "https://m.media-amazon.com/images/I/61irNQIlNhL._SY450_.jpg",
+    affiliateUrl: "https://amzn.to/4dZHg07",
   },
   {
     rank: 2,
-    title: "BenQ EW2790U 27\" 4K Monitor",
-    slug: "benq-ew2790u-4k-review",
-    category: "Tech",
+    title: "Kreo Hive 75 HE Hall Effect Keyboard",
+    slug: "kreo-hive-75-he-keyboard-review",
+    category: "Gaming",
     excerpt:
-      "27\" 4K UHD IPS with 95% P3, AI Contrast, 5Wx2 treVolo speakers, USB-C 65W PD. Perfect for devs and content creators.",
+      "Hall Effect switches, 8K polling rate, rapid trigger, per-key RGB, volume knob. Best budget esports keyboard — 43% OFF.",
     rating: 4.5,
-    price: "₹29,498",
-    badge: "Editor's Choice",
-    image: "https://m.media-amazon.com/images/I/71xmtUEoDcL._SY450_.jpg",
-    affiliateUrl: "https://amzn.to/4tfV3Eq",
+    price: "₹3,999",
+    badge: "Amazon's Choice",
+    image: "https://m.media-amazon.com/images/I/61dPj3YrYRL._SY450_.jpg",
+    affiliateUrl: "https://amzn.to/4dtSjPc",
   },
   {
     rank: 3,
-    title: "FLEXISPOT EN1 Standing Desk",
-    slug: "flexispot-en1-standing-desk-review",
-    category: "Tech",
+    title: "Casa Copenhagen Leather Gaming Chair",
+    slug: "casa-copenhagen-leather-gaming-chair-review",
+    category: "Gaming",
     excerpt:
-      "Electric height adjustable sit-stand desk with anti-collision detection, 80 KG capacity, 5-year warranty. 64% off!",
-    rating: 4.5,
-    price: "₹17,999",
-    badge: "Top Deal",
-    image: "https://m.media-amazon.com/images/I/51OIEZueOiL._SX425_.jpg",
-    affiliateUrl: "https://amzn.to/4lZeRJM",
+      "Italian leather with electric back massager, memory foam seating, multi-function armrest. Insane 80% OFF at ₹7,999.",
+    rating: 4.3,
+    price: "₹7,999",
+    badge: "Hot Deal",
+    image: "https://m.media-amazon.com/images/I/81UiZ5GiF-L._SX425_.jpg",
+    affiliateUrl: "https://amzn.to/4tnazy5",
   },
 ];
 
 const LATEST_ARTICLES = [
   {
-    title: "How to Build a Home Gym on a Budget (Under $500)",
-    slug: "home-gym-budget-guide",
-    category: "Fitness",
+    title: "Kreo Hive 75 HE Review: Best Budget Hall Effect Keyboard?",
+    slug: "kreo-hive-75-he-keyboard-review",
+    category: "Gaming",
     excerpt:
-      "You don't need to spend thousands. Here's exactly what I bought to build a solid home gym for under $500.",
-    date: "Mar 28, 2026",
-    readTime: "8 min read",
+      "Hall effect switches, 8K polling rate, and rapid trigger — all for under ₹4,000. Is it too good to be true?",
+    date: "Apr 4, 2026",
+    readTime: "7 min read",
   },
   {
-    title: "Creatine vs Pre-Workout: Which Should You Take?",
-    slug: "creatine-vs-preworkout",
-    category: "Supplements",
+    title: "ASUS TUF VG247Q1A Review: Best Budget 165Hz Monitor",
+    slug: "asus-tuf-vg247q1a-gaming-monitor-review",
+    category: "Tech",
     excerpt:
-      "Two of the most popular supplements, but they do very different things. Here's what the science says.",
-    date: "Mar 25, 2026",
-    readTime: "6 min read",
+      "24-inch, 165Hz, 1ms response, FreeSync Premium, and speakers for ₹13,499. We tested it for gaming and productivity.",
+    date: "Apr 4, 2026",
+    readTime: "8 min read",
   },
   {
     title: "Best Standing Desk for Developers & Gamers (2026)",
@@ -76,13 +76,13 @@ const LATEST_ARTICLES = [
     readTime: "10 min read",
   },
   {
-    title: "My Home Gym Setup Tour — What I'd Change",
-    slug: "home-gym-tour",
+    title: "How to Build a Home Gym on a Budget (Under $500)",
+    slug: "home-gym-budget-guide",
     category: "Fitness",
     excerpt:
-      "A full walkthrough of my garage gym build: what I got right, what was a waste of money, and what I'd buy differently.",
-    date: "Mar 18, 2026",
-    readTime: "7 min read",
+      "You don't need to spend thousands. Here's exactly what I bought to build a solid home gym for under $500.",
+    date: "Mar 28, 2026",
+    readTime: "8 min read",
   },
 ];
 
@@ -94,17 +94,17 @@ const CATEGORIES = [
 ];
 
 const COMPARISON_DATA = {
-  products: ["Green Soul Monster", "BenQ EW2790U", "FLEXISPOT EN1"],
-  prices: ["₹19,690", "₹29,498", "₹17,999"],
+  products: ["ASUS TUF VG247Q1A", "Kreo Hive 75 HE", "Casa Copenhagen Chair"],
+  prices: ["₹13,499", "₹3,999", "₹7,999"],
   rows: [
-    { feature: "Category", values: ["Gaming Chair", "4K Monitor", "Standing Desk"], highlight: -1 },
-    { feature: "Rating", values: ["4.5 ★ (8.7K)", "4.5 ★ (112)", "4.5 ★ (42)"], highlight: 0 },
-    { feature: "Key Feature", values: ["4D Armrests", "AI Contrast", "Anti-Collision"], highlight: -1 },
-    { feature: "Warranty", values: ["3 Years", "3 Years", "5 Years"], highlight: 2 },
-    { feature: "Discount", values: ["45% OFF", "23% OFF", "64% OFF"], highlight: 2 },
-    { feature: "Best For", values: ["Gaming/Office", "Dev/Creative", "Ergonomic WFH"], highlight: -1 },
+    { feature: "Category", values: ["Gaming Monitor", "Hall Effect Keyboard", "Gaming Chair"], highlight: -1 },
+    { feature: "Rating", values: ["4.6 ★ (634)", "4.5 ★ (308)", "New Launch"], highlight: 0 },
+    { feature: "Key Feature", values: ["165Hz ELMB", "8K Polling + Rapid Trigger", "Electric Massager"], highlight: 1 },
+    { feature: "Warranty", values: ["3 Years", "1 Year", "1 Year"], highlight: 0 },
+    { feature: "Discount", values: ["41% OFF", "43% OFF", "80% OFF"], highlight: 2 },
+    { feature: "Best For", values: ["FPS Gaming", "Competitive Esports", "Long Sessions"], highlight: -1 },
   ],
-  affiliateUrls: ["https://amzn.to/4bY63iB", "https://amzn.to/4tfV3Eq", "https://amzn.to/4lZeRJM"],
+  affiliateUrls: ["https://amzn.to/4dZHg07", "https://amzn.to/4dtSjPc", "https://amzn.to/4tnazy5"],
 };
 
 export default function Home() {
